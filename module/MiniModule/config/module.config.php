@@ -11,6 +11,16 @@ return array(
                         'action' => 'index'
                     )
                 )
+            ),
+            'form'=> array(
+                'type'=>'Zend\Mvc\Router\Http\Literal',
+                'options' =>array(
+                    'route'=>'/form',
+                    'defaults'=>array(
+                       'controller'=>'MiniModule\Controller\Index',
+                    'action'=>'form' 
+                    ) 
+                )
             )
         )
     ),
@@ -19,6 +29,7 @@ return array(
             'error' => __DIR__ . '/../view/error.phtml',
             'layout/layout' => __DIR__ . '/../view/layout/layout.phtml',
             'mini-module/index/index' => __DIR__ . '/../view/MiniModule/index/index.phtml',
+            'mini-module/index/form'=>__DIR__.'/../view/MiniModule/index/form.phtml'
         ),
     ),
     'controllers' => array(

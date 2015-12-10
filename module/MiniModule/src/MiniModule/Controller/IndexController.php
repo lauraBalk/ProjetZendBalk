@@ -6,4 +6,7 @@ class IndexController extends AbstractActionController {
 	public function indexAction(){
 		return array ('nom'=>'tintin');
 	}
+	public function formAction(){
+		
+	}
 }
