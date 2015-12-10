@@ -1,6 +1,7 @@
 <b>Authentification</b>
 <?php
-$form=$this->form;
-$form->prepare();
-$form->setAttribute('action',$this->url('form', array('action'=>'form')) );
-echo $this->form($form);
+ $form = $this->form;
+ $form->prepare();
+ // fixe l'action du formulaire à l'aide du View Helper Url (route, params)
+$form->setAttribute('action', $this->url('form', array('action' => 'traite' )) );
+ echo $this->form($form); 

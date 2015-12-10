@@ -14,17 +14,19 @@ class IndexController extends AbstractActionController {
 
         $services = $this->getServiceLocator();
         $form = $services->get('MiniModule\Form\Authentification');
-        $validator= new Zend\I18n\Validator\Alpha();
-        if ($validator->isValid ('Abcd')) {
-        	//OK cest bon
-
-
-        }else {
-
-        	//Pas bon
-
+        if ( $this->getRequest()->isPost() ) {
+            $form->setData( $this->getRequest()->getPost());
+            if ($form->isValid()) {
+                $vm = new ViewModel();
+                $vm->setVariables( $form->getData() );
+                $vm->setTemplate('mini-module/index/traite');
+                return $vm;
+            }
         }
-
+        $form->setAttribute('action', $this->url()->fromRoute('form', array('action' => 'traite' )) );
          return array( 'form' => $form );
+	}
+	public function traiteAction(){
+		return array('login'=>$_GET['log']);
 	}
 }
