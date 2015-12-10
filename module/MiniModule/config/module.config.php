@@ -29,7 +29,8 @@ return array(
             'error' => __DIR__ . '/../view/error.phtml',
             'layout/layout' => __DIR__ . '/../view/layout/layout.phtml',
             'mini-module/index/index' => __DIR__ . '/../view/MiniModule/index/index.phtml',
-            'mini-module/index/form'=>__DIR__.'/../view/MiniModule/index/form.phtml'
+            'mini-module/index/form'=>__DIR__.'/../view/MiniModule/index/form.phtml',
+            'mini-module/index/traite' => __DIR__ . '/../view/index/traite.phtml',
         ),
     ),
     'controllers' => array(

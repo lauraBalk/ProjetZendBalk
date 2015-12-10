@@ -7,6 +7,7 @@ return array(
             'spec' => array(
                 'type' => 'Zend\Form\Element\Text',
                 'name' => 'log',
+                'name' => 'login',
                 'attributes' => array(
                     'size' => '20',
                 ),
@@ -36,4 +37,5 @@ return array(
             ),
         ),
     ),
+
 );
