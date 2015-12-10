@@ -19,9 +19,7 @@ return array(
             'spec' => array(
                 'type' => 'Zend\Form\Element\Password',
                 'name' => 'password',
-                'attributes' => array(
-                    'size' => '20',
-                ),
+                
                 'options' => array(
                     'label' => 'Mot de passe : ',
                 ),
