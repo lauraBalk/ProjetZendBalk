@@ -37,7 +37,7 @@ return array(
             ),
         ),
     ),
-    /*'input_filter' => array(
+    'input_filter' => array(
         'login' => array(
             'validators' => array(
                 array(
@@ -45,5 +45,5 @@ return array(
                 ),
             ),
         ),
-    ),*/
+    ),
 );
