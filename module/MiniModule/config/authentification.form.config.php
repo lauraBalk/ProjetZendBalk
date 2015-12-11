@@ -3,7 +3,7 @@
 return array(
     'elements' => array(
         // la saisie du login (type text)
-        array(
+        /*array(
             'spec' => array(
                 'type' => 'Zend\Form\Element\Text',
                 'name' => 'log',
@@ -15,7 +15,7 @@ return array(
                     'label' => 'Login : ',
                 ),
             ),
-        ),
+        ),*/
         array(
             'spec' => array(
                 'type' => 'Zend\Form\Element\Password',
@@ -37,13 +37,18 @@ return array(
             ),
         ),
     ),
-    'input_filter' => array(
+    /*'input_filter' => array(
         'login' => array(
             'validators' => array(
                 array(
                     'name' => 'Zend\I18n\Validator\Alpha',
                 ),
             ),
+              'filters' => array(
+                array(
+                  'name' => 'Zend\I18n\Filter\Alpha'
+                ),
+            ),
         ),
-    ),
+    ),*/
 );
